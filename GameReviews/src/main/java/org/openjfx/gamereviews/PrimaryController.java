@@ -6,17 +6,14 @@ import javafx.fxml.FXML;
 
 public class PrimaryController {
 
+    public static String OgString = null;
+
     @FXML
     private void switchToSecondary() throws IOException {
-       int n = 100;
+        int n = 50;
 
-    System.out.println( RandomString.getAlphaNumericString(n));
-      
-
+        OgString = RandomString.getAlphaNumericString(n);
+        System.out.println(OgString);
         App.setRoot("secondary");
     }
 }
-
-
-
-
