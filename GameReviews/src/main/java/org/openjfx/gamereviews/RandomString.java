@@ -1,5 +1,6 @@
 package org.openjfx.gamereviews;
 
+
 public class RandomString {
 
     // function to generate a random string of length n
