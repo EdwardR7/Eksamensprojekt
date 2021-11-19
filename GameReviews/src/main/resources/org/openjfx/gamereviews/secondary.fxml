@@ -15,7 +15,7 @@
             <Font size="14.0" />
          </font></Text>
       <Text layoutX="174.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click to get data:" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4ffec" height="132.0" layoutX="-6.0" layoutY="268.0" stroke="BLACK" strokeType="INSIDE" width="608.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4ffec" height="132.0" layoutX="0" layoutY="268.0" stroke="BLACK" strokeType="INSIDE" width="600" />
       <Button layoutX="75.0" layoutY="321.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
       <Button layoutX="225.0" layoutY="321.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
       <Button layoutX="375.0" layoutY="321.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
