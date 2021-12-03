@@ -15,5 +15,6 @@ public class PrimaryController {
         OgString = RandomString.getAlphaNumericString(n);
         System.out.println(OgString);
         App.setRoot("secondary");
+        
     }
 }
