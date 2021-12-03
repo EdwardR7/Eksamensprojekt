@@ -6,23 +6,23 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.gamereviews.SecondaryController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.gamereviews.SecondaryController">
    <children>
-      <Button fx:id="SecondaryView" layoutX="20" layoutY="20" mnemonicParsing="false" onAction="#switchToPrimary" text="Gå til Primary" />
-      <Button fx:id="upateText" layoutX="271.0" layoutY="187.0" mnemonicParsing="false" onAction="#sText" text="Update" />
-      <Text fx:id="setText" layoutX="-8.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" textAlignment="CENTER" wrappingWidth="615.9160158634186">
+      <Button fx:id="SecondaryView" layoutX="20" layoutY="20" mnemonicParsing="false" onAction="#switchToPrimary" text="Gå til tilbage" />
+      <Button fx:id="upateText" layoutX="378.0" layoutY="284.0" mnemonicParsing="false" onAction="#sText" text="Update" />
+      <Text fx:id="setText" layoutX="97.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" textAlignment="CENTER" wrappingWidth="615.9160158634186">
          <font>
             <Font size="14.0" />
          </font></Text>
-      <Text layoutX="174.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click to get data:" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4ffec" height="132.0" layoutX="0" layoutY="268.0" stroke="BLACK" strokeType="INSIDE" width="600" />
-      <Button layoutX="75.0" layoutY="321.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
-      <Button layoutX="225.0" layoutY="321.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
-      <Button layoutX="375.0" layoutY="321.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
-      <Text layoutX="81.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
-      <Text layoutX="229.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
-      <Text layoutX="381.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
-      <Text layoutX="147.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vælg mellem disse sorteringstyper!" textAlignment="CENTER">
+      <Text layoutX="264.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click to get data:" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4ffec" height="132.0" layoutX="-9.0" layoutY="434.0" stroke="BLACK" strokeType="INSIDE" width="810.0" />
+      <Button layoutX="106.0" layoutY="488.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
+      <Button layoutX="342.0" layoutY="489.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
+      <Button layoutX="619.0" layoutY="485.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
+      <Text layoutX="118.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
+      <Text layoutX="346.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
+      <Text layoutX="626.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
+      <Text layoutX="264.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vælg mellem disse sorteringstyper!" textAlignment="CENTER">
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font>
