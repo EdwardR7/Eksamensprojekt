@@ -1,4 +1,5 @@
-org\openjfx\gamereviews\SecondaryController.class
 module-info.class
-org\openjfx\gamereviews\App.class
-org\openjfx\gamereviews\PrimaryController.class
+org/openjfx/gamereviews/PrimaryController.class
+org/openjfx/gamereviews/RandomString.class
+org/openjfx/gamereviews/App.class
+org/openjfx/gamereviews/SecondaryController.class
