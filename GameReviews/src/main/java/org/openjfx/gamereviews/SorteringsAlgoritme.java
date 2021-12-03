@@ -11,7 +11,6 @@ package org.openjfx.gamereviews;
  */
 public class SorteringsAlgoritme {
  
- 
 }
     
    
