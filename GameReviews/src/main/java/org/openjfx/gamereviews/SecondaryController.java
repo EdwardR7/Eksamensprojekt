@@ -51,7 +51,7 @@ public class SecondaryController {
     }
 
     @FXML
-    private void Algoritme1() throws IOException {
+    private void Algoritme1() throws IOException { // BUBBLE
 
         char charArray[] = dataTextBox.getText().toCharArray();
         int size = charArray.length;
@@ -72,7 +72,7 @@ public class SecondaryController {
     }
 
     @FXML
-    public void Algoritme2() throws IOException {
+    public void Algoritme2() throws IOException { //HEAP 1
         {
 
             char charArray[] = dataTextBox.getText().toCharArray();
@@ -89,8 +89,7 @@ public class SecondaryController {
                 int temp = charArray[0];
                 charArray[0] = charArray[i];
                 charArray[i] = (char) temp;
-
-                // call max heapify on the reduced heap
+                
                 heapify(charArray, i, 0);
             }
             dataTextBox.setText(new String(charArray));
@@ -98,18 +97,15 @@ public class SecondaryController {
 
     }
 
-    public void heapify(char[] arr, int n, int i) throws IOException {
+    public void heapify(char[] arr, int n, int i) throws IOException { //HEAP 2
 
         int largest = i; // Initialize largest as root
         int l = 2 * i + 1; // left = 2*i + 1
         int r = 2 * i + 2; // right = 2*i + 2
 
-        // If left child is larger than root
         if (l < n && arr[l] > arr[largest]) {
             largest = l;
         }
-
-        // If right child is larger than largest so far
         if (r < n && arr[r] > arr[largest]) {
             largest = r;
         }
@@ -119,22 +115,21 @@ public class SecondaryController {
             int swap = arr[i];
             arr[i] = arr[largest];
             arr[largest] = (char) swap;
-
-            // Recursively heapify the affected sub-tree
+            
             heapify(arr, n, largest);
         }
     }
 
     @FXML
-    private void Algoritme3() throws IOException {
+    private void Algoritme3() throws IOException { //bubble med navne
         
         String names[] = dataTextBox.getText().split(", ");
         
-        int n = names.length;
+        int size = names.length;
         
         String temp;
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
+        for (int i = 0; i < size; i++) {
+            for (int j = i + 1; j < size; j++) {
 
                 if (names[i].compareTo(names[j]) > 0) {
                     // swapping
@@ -146,7 +141,7 @@ public class SecondaryController {
 
         }
         dataTextBox.clear();
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < size; i++) {
             dataTextBox.insertText(dataTextBox.getSelection().getEnd(), names[i]+ ", ");
         }
     }
