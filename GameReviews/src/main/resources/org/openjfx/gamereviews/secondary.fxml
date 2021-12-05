@@ -19,8 +19,8 @@
       <Button fx:id="algoritme2" layoutX="325.0" layoutY="484.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Heap Algorithm" onAction="#Algoritme2"  />
       <Button fx:id="algoritme3" layoutX="525.0" layoutY="484.0" mnemonicParsing="false" onAction="#Algoritme3" prefHeight="27.0" prefWidth="150.0" text="Bubble Names Algorithm"/>
       <Text layoutX="131.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tal, store- og små bogstaver" textAlignment="CENTER" wrappingWidth="138.0" />
-      <Text layoutX="329.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
-      <Text layoutX="531.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
+      <Text layoutX="329.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tal, store- og små bogstaver" textAlignment="CENTER" wrappingWidth="138.0" />
+      <Text layoutX="531.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert navne opdelt med komma eller mellemrum" textAlignment="CENTER" wrappingWidth="138.0" />
       <Text layoutX="247.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose between these sorting algorithms" textAlignment="CENTER">
          <font>
             <Font name="Arial Bold" size="18.0" />

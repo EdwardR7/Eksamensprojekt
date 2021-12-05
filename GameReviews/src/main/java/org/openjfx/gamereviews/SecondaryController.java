@@ -147,7 +147,7 @@ public class SecondaryController {
         }
         dataTextBox.clear();
         for (int i = 0; i < n; i++) {
-            dataTextBox.insertText(dataTextBox.getSelection().getEnd(), names[i]+ " ");
+            dataTextBox.insertText(dataTextBox.getSelection().getEnd(), names[i]+ ", ");
         }
     }
 }
