@@ -52,7 +52,7 @@ public class RandomString {
         return sb.toString();
        }catch(Exception e){
            System.out.println(e);
-           return "No characters to work with :)";
+           return "No characters to create data from.";
        }
     }
 

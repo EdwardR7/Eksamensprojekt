@@ -6,15 +6,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.Slider;
 import javafx.scene.control.CheckBox;
+import java.util.Arrays;
 
 
 public class SecondaryController {
 
-    @FXML
-    private Button SecondaryView;
-    @FXML
-    private Button updateTextButton;
-   
     @FXML
     private TextArea dataTextBox;
     @FXML
@@ -25,7 +21,6 @@ public class SecondaryController {
     private CheckBox abcCheckBox;
     @FXML
     private CheckBox numbersCheckBox;
-  
     
     public static String OgString = null;
     double n = 100;
@@ -47,6 +42,15 @@ public class SecondaryController {
         dataTextBox.setText(OgString);
 
     }
-    
+    @FXML
+    private void Algoritme1() throws IOException{
+        
+        char charArray[] = dataTextBox.getText().toCharArray();
+        
+        Arrays.sort(charArray);
+        
+        dataTextBox.setText(new String(charArray));
+        
+    }
     
 }
