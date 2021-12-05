@@ -7,10 +7,11 @@ public class RandomString {
     static String ABC = "";
     static String abc = "";
     static String numbers = "";
+    static String special = "";
     
     
     // function to generate a random string of length n
-    static String getAlphaNumericString(double n, boolean ABC_, boolean abc_, boolean numbers_) {
+    static String getAlphaNumericString(double n, boolean ABC_, boolean abc_, boolean numbers_, boolean special_) {
 
         // Check current checkboxes
         if(ABC_){
@@ -31,10 +32,17 @@ public class RandomString {
         } else{
             numbers = "";
         }
+         if(special_){
+            
+            special = ",.*?^#¤%&/()=+";
+        } else{
+            numbers = "";
+        }
+        
         
         // chose a Character random from this String
        try{
-        String AlphaNumericString = ABC + numbers + abc;
+        String AlphaNumericString = ABC + numbers + abc + special;
         
         // create StringBuffer size of AlphaNumericString
         StringBuilder sb = new StringBuilder((int) n);

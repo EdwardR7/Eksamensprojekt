@@ -16,11 +16,11 @@
       <Text layoutX="112.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create random data:" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4ffec" height="132.0" layoutX="-5.0" layoutY="438.0" stroke="BLACK" strokeType="INSIDE" width="806.0" />
       <Button fx:id="algoritme1" layoutX="125.0" layoutY="484.0" mnemonicParsing="false" onAction="#Algoritme1" prefHeight="27.0" prefWidth="150.0" text="Bubble Algorithm" />
-      <Button fx:id="algoritme2" layoutX="325.0" layoutY="484.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Heap Algorithm" onAction="#Algoritme2"  />
-      <Button fx:id="algoritme3" layoutX="525.0" layoutY="484.0" mnemonicParsing="false" onAction="#Algoritme3" prefHeight="27.0" prefWidth="150.0" text="Bubble Names Algorithm"/>
+      <Button fx:id="algoritme2" layoutX="325.0" layoutY="484.0" mnemonicParsing="false" onAction="#Algoritme2" prefHeight="27.0" prefWidth="150.0" text="Heap Algorithm" />
+      <Button fx:id="algoritme3" layoutX="525.0" layoutY="484.0" mnemonicParsing="false" onAction="#Algoritme3" prefHeight="27.0" prefWidth="150.0" text="Bubble Names Algorithm" />
       <Text layoutX="131.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tal, store- og små bogstaver" textAlignment="CENTER" wrappingWidth="138.0" />
       <Text layoutX="329.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tal, store- og små bogstaver" textAlignment="CENTER" wrappingWidth="138.0" />
-      <Text layoutX="531.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert navne opdelt med komma eller mellemrum" textAlignment="CENTER" wrappingWidth="138.0" />
+      <Text layoutX="531.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bubble algorithm split with commas " textAlignment="CENTER" wrappingWidth="138.0" />
       <Text layoutX="247.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose between these sorting algorithms" textAlignment="CENTER">
          <font>
             <Font name="Arial Bold" size="18.0" />
@@ -29,10 +29,11 @@
       <TextArea fx:id="dataTextBox" editable="false" layoutX="328.0" layoutY="33.0" prefHeight="390.0" prefWidth="425.0" promptText="No data generated..." wrapText="true" />
       <Slider fx:id="nSlider" blockIncrement="240.0" layoutX="37.0" layoutY="129.0" majorTickUnit="240.0" max="1300.0" min="100.0" minorTickCount="240" prefHeight="14.0" prefWidth="252.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="100.0" />
       <CheckBox fx:id="ABCCheckBox" layoutX="37.0" layoutY="185.0" mnemonicParsing="false" selected="true" text="ABC..." />
-      <CheckBox fx:id="abcCheckBox" layoutX="37.0" layoutY="205" mnemonicParsing="false" selected="true" text="abc..." />
-      <CheckBox fx:id="numbersCheckBox" layoutX="37.0" layoutY="225" mnemonicParsing="false" selected="true" text="123..." />
-      <TextArea fx:id="insertTextBox" layoutX="37.0" layoutY="278.0" prefHeight="105.0" prefWidth="273.0" promptText="Ctrl + c / Ctrl v" wrapText="true" />
-      <Text layoutX="41.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert your own text:" wrappingWidth="125.13671875" />
-      <Button layoutX="97.0" layoutY="390.0" mnemonicParsing="false"  onAction="#InsertText"  prefHeight="25.0" prefWidth="138.0" text="Confirm text and insert" />
+      <CheckBox fx:id="abcCheckBox" layoutX="112.0" layoutY="185.0" mnemonicParsing="false" selected="true" text="abc..." />
+      <CheckBox fx:id="numbersCheckBox" layoutX="186.0" layoutY="185.0" mnemonicParsing="false" selected="true" text="123..." />
+      <TextArea fx:id="insertTextBox" layoutX="37.0" layoutY="264.0" prefHeight="105.0" prefWidth="273.0" promptText="Ctrl + c / Ctrl v" wrapText="true" />
+      <Text layoutX="41.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert your own text:" wrappingWidth="125.13671875" />
+      <Button layoutX="98.0" layoutY="379.0" mnemonicParsing="false" onAction="#InsertText" prefHeight="25.0" prefWidth="138.0" text="Confirm text and insert" />
+      <CheckBox fx:id="specialCheckBox" layoutX="259.0" layoutY="185.0" mnemonicParsing="false" text=",.-" />
    </children>
 </AnchorPane>

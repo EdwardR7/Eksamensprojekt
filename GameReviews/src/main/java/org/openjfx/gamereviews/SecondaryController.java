@@ -22,6 +22,8 @@ public class SecondaryController {
     private CheckBox abcCheckBox;
     @FXML
     private CheckBox numbersCheckBox;
+    @FXML
+    private CheckBox specialCheckBox;
 
     public static String OgString = null;
     double n = 100;
@@ -36,7 +38,7 @@ public class SecondaryController {
 
         n = Math.round(nSlider.getValue());
 
-        OgString = RandomString.getAlphaNumericString(n, ABCCheckBox.isSelected(), abcCheckBox.isSelected(), numbersCheckBox.isSelected());
+        OgString = RandomString.getAlphaNumericString(n, ABCCheckBox.isSelected(), abcCheckBox.isSelected(), numbersCheckBox.isSelected(), specialCheckBox.isSelected());
         System.out.println(Math.round(n) + "   " + OgString);
 
         dataTextBox.setText(OgString);
@@ -67,7 +69,7 @@ public class SecondaryController {
             }
 
         }
-
+        dataTextBox.clear();
         dataTextBox.setText(new String(charArray));
     }
 
@@ -89,9 +91,10 @@ public class SecondaryController {
                 int temp = charArray[0];
                 charArray[0] = charArray[i];
                 charArray[i] = (char) temp;
-                
+
                 heapify(charArray, i, 0);
             }
+            dataTextBox.clear();
             dataTextBox.setText(new String(charArray));
         }
 
@@ -115,18 +118,18 @@ public class SecondaryController {
             int swap = arr[i];
             arr[i] = arr[largest];
             arr[largest] = (char) swap;
-            
+
             heapify(arr, n, largest);
         }
     }
 
     @FXML
     private void Algoritme3() throws IOException { //bubble med navne
-        
-        String names[] = dataTextBox.getText().split(", ");
-        
+
+        String names[] = dataTextBox.getText().split(",");
+
         int size = names.length;
-        
+
         String temp;
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
@@ -142,7 +145,7 @@ public class SecondaryController {
         }
         dataTextBox.clear();
         for (int i = 0; i < size; i++) {
-            dataTextBox.insertText(dataTextBox.getSelection().getEnd(), names[i]+ ", ");
+            dataTextBox.insertText(dataTextBox.getSelection().getEnd(), names[i] + ", ");
         }
     }
 }
