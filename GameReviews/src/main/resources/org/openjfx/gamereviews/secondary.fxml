@@ -16,7 +16,7 @@
       <Text layoutX="112.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create random data:" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4ffec" height="132.0" layoutX="-9.0" layoutY="434.0" stroke="BLACK" strokeType="INSIDE" width="810.0" />
       <Button fx:id="algoritme1" layoutX="106.0" layoutY="488.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Arrays.sort()" onAction="#Algoritme1" />
-      <Button fx:id="algoritme2" layoutX="342.0" layoutY="489.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
+      <Button fx:id="algoritme2" layoutX="342.0" layoutY="489.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" onAction="#Algoritme2" />
       <Button fx:id="algoritme3" layoutX="619.0" layoutY="485.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
       <Text layoutX="118.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tal, store- og små bogstaver" textAlignment="CENTER" wrappingWidth="138.0" />
       <Text layoutX="346.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
