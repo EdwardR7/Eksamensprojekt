@@ -63,6 +63,7 @@ public class SecondaryController {
                     int temp = charArray[i];
                     charArray[i] = charArray[j];
                     charArray[j] = (char) temp;
+                    
                 }
             }
         }
