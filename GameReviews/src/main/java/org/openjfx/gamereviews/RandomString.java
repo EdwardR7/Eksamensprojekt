@@ -4,13 +4,13 @@ package org.openjfx.gamereviews;
 public class RandomString {
 
     // function to generate a random string of length n
-    static String getAlphaNumericString(int n) {
+    static String getAlphaNumericString(double n) {
 
         // chose a Character random from this String
         String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789" + "abcdefghijklmnopqrstuvxyz";
 
         // create StringBuffer size of AlphaNumericString
-        StringBuilder sb = new StringBuilder(n);
+        StringBuilder sb = new StringBuilder((int) n);
 
         for (int i = 0; i < n; i++) {
 

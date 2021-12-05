@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
@@ -9,12 +11,8 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.gamereviews.SecondaryController">
    <children>
       <Button fx:id="SecondaryView" layoutX="20" layoutY="20" mnemonicParsing="false" onAction="#switchToPrimary" text="Gå til tilbage" />
-      <Button fx:id="upateText" layoutX="378.0" layoutY="284.0" mnemonicParsing="false" onAction="#sText" text="Update" />
-      <Text fx:id="setText" layoutX="97.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" textAlignment="CENTER" wrappingWidth="615.9160158634186">
-         <font>
-            <Font size="14.0" />
-         </font></Text>
-      <Text layoutX="264.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click to get data:" />
+      <Button fx:id="upateText" layoutX="95.0" layoutY="92.0" mnemonicParsing="false" onAction="#sText" text="Generate random string" />
+      <Text layoutX="112.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create random data:" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4ffec" height="132.0" layoutX="-9.0" layoutY="434.0" stroke="BLACK" strokeType="INSIDE" width="810.0" />
       <Button layoutX="106.0" layoutY="488.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
       <Button layoutX="342.0" layoutY="489.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
@@ -27,5 +25,7 @@
             <Font name="Arial Bold" size="18.0" />
          </font>
       </Text>
+      <TextArea fx:id="dataTextBox" editable="false" layoutX="328.0" layoutY="33.0" prefHeight="349.0" prefWidth="425.0" promptText="No data generated" wrapText="true" />
+      <Slider fx:id="nSlider" blockIncrement="12.0" layoutX="37.0" layoutY="129.0" majorTickUnit="240.0" max="1300.0" min="100.0" minorTickCount="240" prefHeight="14.0" prefWidth="252.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
    </children>
 </AnchorPane>

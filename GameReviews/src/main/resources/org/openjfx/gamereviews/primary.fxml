@@ -8,13 +8,13 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.gamereviews.PrimaryController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#aedaeb" height="56.0" layoutX="260.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" width="280.0" />
-      <Button fx:id="PrimaryView" layoutX="344.0" layoutY="287.0" mnemonicParsing="false" onAction="#switchToSecondary" text="Create data " />
-      <Text layoutX="298.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click to generate random string!" wrappingWidth="175.6943359375" />
-      <Text layoutX="283.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sorteringsalgoritme program" textAlignment="CENTER" wrappingWidth="233.0625">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" layoutX="247.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="306.0" />
+      <Text layoutX="261.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sorteringsalgoritme- program" textAlignment="CENTER" wrappingWidth="277.0625">
          <font>
             <Font name="Arial" size="22.0" />
          </font>
       </Text>
+      <Button fx:id="PrimaryView" layoutX="322.0" layoutY="345.0" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="28.0" prefWidth="155.0" text="Sort something" />
+      <Text layoutX="298.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click to try out the sorting algoritms!" textAlignment="CENTER" wrappingWidth="204.6943359375" />
    </children>
 </AnchorPane>

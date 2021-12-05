@@ -1,11 +1,11 @@
 package org.openjfx.gamereviews;
 
-import static org.openjfx.gamereviews.PrimaryController.OgString;
-
 import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.text.*;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.Slider;
+
 
 public class SecondaryController {
 
@@ -13,8 +13,15 @@ public class SecondaryController {
     private Button SecondaryView;
     @FXML
     private Button updateTextButton;
+    
     @FXML
-    private Text setText;
+    private TextArea dataTextBox;
+    @FXML
+    private Slider nSlider;
+    
+    public static String OgString = null;
+    double n = 100;
+    
 
     @FXML
     private void switchToPrimary() throws IOException {
@@ -23,8 +30,15 @@ public class SecondaryController {
 
     @FXML
     private void sText() throws IOException {
-        System.out.println(OgString);
-        setText.setText(OgString);
+
+        n = Math.round(nSlider.getValue()); 
+        
+       OgString = RandomString.getAlphaNumericString(n);
+        System.out.println(Math.round(n)+ "   " + OgString);
+        
+        dataTextBox.setText(OgString);
 
     }
+    
+    
 }
