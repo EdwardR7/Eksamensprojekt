@@ -14,6 +14,8 @@ public class SecondaryController {
     @FXML
     private TextArea dataTextBox;
     @FXML
+    private TextArea InsertTextBox;
+    @FXML
     private Slider nSlider;
     @FXML
     private CheckBox ABCCheckBox;
@@ -43,14 +45,28 @@ public class SecondaryController {
 
     }
     @FXML
+    private void insertText(){
+        
+        dataTextBox.setText(InsertTextBox.getText());
+        
+    }
+    
+    @FXML
     private void Algoritme1() throws IOException{
         
         char charArray[] = dataTextBox.getText().toCharArray();
         
-        Arrays.sort(charArray);
-        
+         int size = charArray.length;
+        for(int i = 0; i < size; i++){
+            for(int j = i+1; j < size; j++){
+                if(charArray[i]>charArray[j]){
+                    int temp = charArray[i];
+                    charArray[i] = charArray[j];
+                    charArray[j] = (char) temp;
+                }
+            }
+        }
         dataTextBox.setText(new String(charArray));
-        
     }
     
 }

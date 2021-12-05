@@ -14,22 +14,25 @@
       <Button fx:id="SecondaryView" layoutX="20" layoutY="20" mnemonicParsing="false" onAction="#switchToPrimary" text="Gå til tilbage" />
       <Button fx:id="upateText" layoutX="95.0" layoutY="92.0" mnemonicParsing="false" onAction="#sText" text="Generate random string" />
       <Text layoutX="112.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create random data:" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4ffec" height="132.0" layoutX="-9.0" layoutY="434.0" stroke="BLACK" strokeType="INSIDE" width="810.0" />
-      <Button fx:id="algoritme1" layoutX="106.0" layoutY="488.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Arrays.sort()" onAction="#Algoritme1" />
-      <Button fx:id="algoritme2" layoutX="342.0" layoutY="489.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
-      <Button fx:id="algoritme3" layoutX="619.0" layoutY="485.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
-      <Text layoutX="118.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tal, store- og små bogstaver" textAlignment="CENTER" wrappingWidth="138.0" />
-      <Text layoutX="346.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
-      <Text layoutX="626.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
-      <Text layoutX="264.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vælg mellem disse sorteringstyper!" textAlignment="CENTER">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4ffec" height="132.0" layoutX="-5.0" layoutY="438.0" stroke="BLACK" strokeType="INSIDE" width="806.0" />
+      <Button fx:id="algoritme1" layoutX="125.0" layoutY="484.0" mnemonicParsing="false" onAction="#Algoritme1" prefHeight="27.0" prefWidth="150.0" text="Arrays.sort()" />
+      <Button fx:id="algoritme2" layoutX="325.0" layoutY="484.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
+      <Button fx:id="algoritme3" layoutX="525.0" layoutY="484.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Algoritme navn" />
+      <Text layoutX="131.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tal, store- og små bogstaver" textAlignment="CENTER" wrappingWidth="138.0" />
+      <Text layoutX="329.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
+      <Text layoutX="531.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kort beskrivelse" textAlignment="CENTER" wrappingWidth="138.0" />
+      <Text layoutX="247.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vælg mellem disse sorteringstyper!" textAlignment="CENTER">
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font>
       </Text>
-      <TextArea fx:id="dataTextBox" editable="false" layoutX="328.0" layoutY="33.0" prefHeight="349.0" prefWidth="425.0" promptText="No data generated..." wrapText="true" />
+      <TextArea fx:id="dataTextBox" editable="false" layoutX="328.0" layoutY="33.0" prefHeight="390.0" prefWidth="425.0" promptText="No data generated..." wrapText="true" />
       <Slider fx:id="nSlider" blockIncrement="240.0" layoutX="37.0" layoutY="129.0" majorTickUnit="240.0" max="1300.0" min="100.0" minorTickCount="240" prefHeight="14.0" prefWidth="252.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="100.0" />
       <CheckBox fx:id="ABCCheckBox" layoutX="37.0" layoutY="185.0" mnemonicParsing="false" selected="true" text="ABC..." />
       <CheckBox fx:id="abcCheckBox" layoutX="37.0" layoutY="205" mnemonicParsing="false" selected="true" text="abc..." />
       <CheckBox fx:id="numbersCheckBox" layoutX="37.0" layoutY="225" mnemonicParsing="false" selected="true" text="123..." />
+      <TextArea fx:id="InsertTextBox" layoutX="37.0" layoutY="278.0" prefHeight="105.0" prefWidth="273.0" promptText="Ctrl + c / Ctrl v" wrapText="true" />
+      <Text layoutX="41.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert your own text:" wrappingWidth="125.13671875" />
+      <Button layoutX="97.0" layoutY="390.0" mnemonicParsing="false" onAction="#insertText" prefHeight="25.0" prefWidth="138.0" text="Confirm text and insert" />
    </children>
 </AnchorPane>
