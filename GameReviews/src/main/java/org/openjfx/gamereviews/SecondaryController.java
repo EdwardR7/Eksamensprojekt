@@ -42,13 +42,14 @@ public class SecondaryController {
         dataTextBox.setText(OgString);
 
     }
+
     @FXML
-    private void InsertText(){
-        
+    private void InsertText() {
+
         dataTextBox.setText(insertTextBox.getText());
-        
+
     }
-    
+
     @FXML
     private void Algoritme1() throws IOException {
 
@@ -126,8 +127,11 @@ public class SecondaryController {
 
     @FXML
     private void Algoritme3() throws IOException {
-
-        String names[] = dataTextBox.getText().split(",");
+        
+        String names[] = dataTextBox.getText().split(", ");
+        
+        int n = names.length;
+        
         String temp;
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
@@ -141,6 +145,9 @@ public class SecondaryController {
             }
 
         }
-      //  dataTextBox.setText(new String(str.(names)));
+        dataTextBox.clear();
+        for (int i = 0; i < n; i++) {
+            dataTextBox.insertText(dataTextBox.getSelection().getEnd(), names[i]+ " ");
+        }
     }
 }
